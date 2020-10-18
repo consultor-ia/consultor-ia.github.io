@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ConsultorIA - IA</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="main.js"></script>
+        
+    </head>
+
+    <body>
+        <section>
+            <div class="topnav" id="myTopnav">    
+            <nav id="topo">
+                <a href="#" class="logo"><img src="assets/logo-navbar.png"/></a>
+                
+                <ul>
+                    <li><a href="#" class="active">Início</a></li>
+                    <li><a href="#vantagens">Vantagens</a></li>
+                    <li><a href="#examples">Exemplos</a></li>
+                    <!--<li><a href="#bot">Bot</a></li>-->
+                    <!-- <label for="checkbox" class="label">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                        <div class="ball"></div>
+                    </label>-->
+                </ul>
+            </nav>
+
+            <div class="header">
+                <img src="assets/header.png" class="model" alt="header"/>
+            </div>
+            <div class="about-container">
+                <h1>O que é IA?</h1>
+                <p>
+                    A inteligência artificial (IA) é um ramo amplo da ciência da computação, na qual
+                    tenta simular as características da inteligência humana. Tais como a análise,
+                     compreensão, aplicação e reteção da informação. A simulação pode ser ao tentar
+                      reconhecer um rosto, reproduzir vozes, analisar textos e tomar decisões. A IA
+                       já está presente em diversas aréas e proporcionam diversas vantagens. 
+                </p>
+            </div>
+
+
+            <div class="features">
+                <span class="material-one"></span>
+                <span class="material-two"></span>
+                <img src="assets/features-image.png">
+
+                <h3 id="vantagens">Vantagens da IA</h3>
+
+                <div class="card-features-one">
+                    <span>></span>
+                    <h4>Indústria</h4>
+                    <p>Alta Produção e precisão em curto prazo de tempo </p>
+                </div>
+                
+                <div class="card-features-two">
+                    <span></span>
+                    <h4>Educação</h4>
+                    <p>Forcene novos métodos pedagógicos, nos quais possibilitam a aprendizagem por meio de plataformas digitais interativas.</p>
+                </div>
+
+                <div class="card-features-three">
+                    <span></span>
+                    <h4>Saúde</h4>
+                    <p>Realiza diagnósticos médicos com maior precisão e rapidez.</p>              
+                </div>
+                
+                <div class="card-features-four">
+                    <span></span>
+                    <h4>Sociedade</h4>
+                    <p>Otimiza tempo de viagens utilizando diversas informações e recomenda a melhor rota. </p>
+                </div>
+            </div>
+            
+            <div class="examples" id="examples">
+                <div class="card-one">
+                    <span><img src="assets/examples-Chatbot.jpg" width="330px" height="433px"/></span>
+                    <h3>Chatbot</h3>
+                    <p>Ferramenta de atendimento ao cliente muito utilizada por grandes empresas. o "robô" é treinado
+                         para solucionar problemas e dúvidas do uuário. Além disso ele pode aprender novos vocabulários confrome o uso de cliente. </p>
+                </div>
+
+                <div class="card-two">
+                    <span><img src="assets/examples-netflix.jpg" width="330px" height="433px"/></span>
+                    <h3>Recomedações da Netflix</h3>
+                    <p>Sim, as recomendações também são arte da IA. O sistema possui algoritmos treinados para recomendar
+                        um conteúdo baseando-se no histórico de pesquisa tanto do próprio usuário quanto no de outros.
+                    </p>
+                </div>
+
+                <div class="card-three">
+                    <span><img src="assets/examples-facebook.jpg" width="330px" height="433px"/></span>
+                    <h3>Manipulação nas Redes</h3>
+                    <p>Facebook utiliza diversos conceitos de IA para te manter conectado o tempo todo na plataforma.
+                         Programa imagens e contéudos que você gosta e te mantém ligado com perfis parecidos com o seu.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="upload" id="upImage">
+                <span class="slice"></span>
+                <img src="assets/upload.png">
+                <p>Carregar imagem</p>
+
+                <span class="seta">
+                    <img src="assets/right-arrow.png" />
+                </span>
+
+                <span class="result"></span>
+
+               <button><a href="#">Enviar</a></button>
+                
+            </div>
+
+
+            <div class="footer">
+                <div class="logo">
+                    <img src="assets/logo-footer.png" />
+                </div>
+
+                <div class="ends">
+                    <span></span>
+                    <p>Obrigado por participar do projeto!</p>
+                </div>
+
+                <nav class="chat" id="chat-bot">
+                    <span class="base">
+                        <span class="top">
+                          <!--  <img src="assets/icon.png" /> -->
+                        </span>
+                    </span>
+                </nav>
+            </div>
+            <div class="fab">
+                <img src="inte.png" alt="">
+            </div>
+        
+            <div class="box">
+                <ul>
+                    <li>
+                        <a href="#topo" class="item">Voltar ao topo</a>
+                    </li>
+                    <li>
+                        <input class="item" id="item1" type="button" value="O que é uma I.A ?" onclick="responderA()">
+                    </li>
+                    <li>
+                        <input class="item" id="item2" type="button" value="Como é feita uma I.A ?" onclick="responderB()">
+                    </li>
+                    <li>
+                        <input class="item" id="item3" type="button" value="Qual a história por trás ?" onclick="responderC()">
+                    </li>
+                </ul>
+            </div>
+            <script>
+                document.querySelector('.fab').addEventListener('click', function(e){
+                    resp = document.querySelector("nav.chat");
+                    resp.innerHTML="";
+                    document.querySelector('.box').classList.toggle('box-active');
+                    document.querySelector('.fab').classList.toggle('fab-active');
+                });
+            </script>
+        </section>
+    </body>
+</html>
